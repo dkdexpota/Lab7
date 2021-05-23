@@ -1,0 +1,19 @@
+public enum Comand {
+    info,
+    show,
+    add,
+    help,
+    update,
+    id,
+    remove_by_id,
+    clear,
+    save,
+    execute_script,
+    exit,
+    head,
+    add_if_min,
+    remove_greater,
+    sum_of_health,
+    count_by_health,
+    filter_by_health;
+}
