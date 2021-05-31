@@ -188,8 +188,6 @@ public class DBTreatment {
         try {
             Class.forName("org.postgresql.Driver");
             c = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "***");
-            // "jdbc:postgresql://localhost:5432/postgres", "postgres", "syh171"
-            // "jdbc:postgresql://pg:5432/studs","s311773", "syh171"
             c.setAutoCommit(false);
             // coords
             PreparedStatement psCoord = c.prepareStatement("insert into coordinates (id, x, y) values (nextval('order_coord'), ?, ?)", Statement.RETURN_GENERATED_KEYS);
